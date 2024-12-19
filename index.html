@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles2.css" rel="stylesheet" type="text/css">
+    <title>0-0</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="header__main">
+            <img class="img__logo" alt="Логотип" src="dunk.jpg"/>
+        
+            <p style="padding: 20px;">
+                Группа ЭФБО-07-23 <br>
+                Михайлов Сергей Константинович
+            </p>
+        </section>
+        
+        <section class="header__nav">
+            <ul class="header_nav__list">
+                <li class="header_nav__item">
+                    <a class="header_nav__link" href="main.html">Главная</a>
+                </li>
+                <li class="header_nav__item">
+                    <a class="header_nav__link" href="perviy.html">Первый семестр</a>
+                </li>
+                <li class="header_nav__item">
+                    <a class="header_nav__link" href="#">Второй семестр</a>
+                </li>
+                <li class="header_nav__item">
+                    <a class="header_nav__link" href="second.html">Услуги</a>
+                </li>
+                <li class="header_nav__item">
+                    <a class="header_nav__link" href="#">Авторизация</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <main >
+        <section class="main__nav">
+            <h3>
+                Навигация по странцие
+            </h3>
+
+            <ul class="main_nav__list">
+                <li class="main_nav__item">
+                    <a class="main_nav__link" href="#front">Фронтенд</a>
+                </li>
+                <li class="main_nav__item">
+                    <a class="main_nav__link" href="#back">Бэкенд</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main__info">
+            <article class="article">
+            <h3>Добро пожаловать на мой сайт</h3>
+            </article>
+            <div class="art_div">
+                <p>Меня зовут Михайлов Сергей Константинович и я начинающий специалист по веб-разработке.</p>
+                <img src="dunk.jpg" class="smile_face" alt="smile" >
+            </div>
+            <h5 id="front">Фронтенд</h5>
+            <p class="art_p">Frontend — это клиентская часть продукта (интерфейс, с которым взаимодействует пользователь). В случае с сайтом ее формирует и выводит на экран браузер, который работает с HTML, CSS и JavaScript. </p>
+            <video src="Y2meta.app-Миньон едет на велосипеде (мем с тиктока Миньоны_ Грювитация).mp4" width="20%" controls="controls"> </video>
+            <h5 id="bakc">Бэкенд</h5>
+            <style>
+                h5 {
+            transition: background-color 0.5s ease; /* Плавный переход цвета фона */
+            padding: 10px; /* Добавим немного отступа для лучшего визуального эффекта */
+            cursor: pointer; /* Указатель мыши при наведении */
+        }
+
+        .active {
+            background-color: lightblue; /* Цвет фона при клике */
+        }
+                
+
+    
+            </style>
+            <p class="art_p">Backend — это внутренняя часть продукта, которая находится на сервере и скрыта от пользователей. Для ее разработки могут использоваться самые разные языки, например, Python, PHP, Go, JavaScript, Java, С#.</p>
+            <video src="Y2meta.app-Миньон едет на велосипеде (мем с тиктока Миньоны_ Грювитация).mp4" width="20%" controls="controls"></video>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <p class="footer__copyright">&copy;Михайлов Сергей Константинович</p>
+
+        <ul class="footer__contact">
+            <li class="footer_contact__item">
+                <a href="vk.com/m1khasik">VK</a>
+            </li>
+            <li class="footer_contact__item">
+                <a href="vk.com/m1khasik">INST</a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <div id="modalWindow" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Форма заказа услуги</h2>
+        
+
+        <form id="orderForm">
+
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required><br><br>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Введите вашу почту" required><br><br>
+
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required><br><br>
+
+
+            <label for="country">Страна:</label>
+            <select id="country" name="country"  required>
+                <option value="">Выберите страну</option>
+                <option value="Россия">Россия</option>
+                <option value="Казахстан">Казахстан</option>
+            </select><br><br>
+
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+
+            <label for="comments">Комментарий:</label>
+            <textarea id="comments" name="comments" placeholder="Введите комментарий..." rows="4"></textarea><br><br>
+
+
+            <input type="hidden" id="serviceType" name="serviceType" value="">
+
+>
+            <button type="submit" id="submitBtn">Отправить</button>
+        </form>
+
+
+        <p id="successMessage" style="display:none; color: green;">Форма успешно отправлена!</p>
+    </div>
+</div>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
